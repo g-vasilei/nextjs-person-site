@@ -8,7 +8,8 @@ export default function Home() {
          <div>
             <div className='text-4xl font-bold text-inherit'>
                <h1>
-                  Hi, I'm <span className='text-violet-700 text-5xl'>George</span> <br />
+                  Hi, I'm <span className='text-violet-700 text-5xl'>George</span>
+                  <br></br>
                   Web developer
                </h1>
                <div className='text-xl text-stone-400 mt-10'>Specializing in custom pages and e-shops.</div>
