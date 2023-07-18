@@ -6,7 +6,7 @@ import { RiCodeSSlashFill } from 'react-icons/ri'
 
 const portfolio = () => {
    return (
-      <div className='px-3 mt-16'>
+      <section className='px-3 mt-16'>
          <h1 className='text-4xl font-bold text-inherit flex items-center gap-6'>
             My Work <RiCodeSSlashFill size={40} />
          </h1>
@@ -47,7 +47,7 @@ const portfolio = () => {
                </p>
             </div>
          </div>
-      </div>
+      </section>
    )
 }
 
