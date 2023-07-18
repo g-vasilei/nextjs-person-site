@@ -4,6 +4,11 @@ import React from 'react'
 import { BsCodeSlash } from 'react-icons/bs'
 import { RiCodeSSlashFill } from 'react-icons/ri'
 
+export const metadata = {
+   title: 'gvasilei | portfolio',
+   description: 'gvasilei portfolio page',
+}
+
 const portfolio = () => {
    return (
       <section className='px-3 mt-16'>

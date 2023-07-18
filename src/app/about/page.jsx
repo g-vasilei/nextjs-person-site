@@ -28,6 +28,12 @@ const wpSkills = [
    'WooCommerce',
    'SQL',
 ]
+
+export const metadata = {
+   title: 'gvasilei | about',
+   description: 'gvasilei about page',
+}
+
 const about = () => {
    return (
       <div className='px-3 py-4 mt-10'>

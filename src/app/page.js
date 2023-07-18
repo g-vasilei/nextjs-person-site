@@ -2,6 +2,11 @@ import CircleAnimation from '@/components/animations/CircleAnimation'
 import HomeAnimation from '@/components/animations/HomeAnimation'
 import Link from 'next/link'
 
+export const metadata = {
+   title: 'gvasilei',
+   description: 'gvasilei personal site',
+}
+
 export default function Home() {
    return (
       <section className='flex flex-col w-full items-center justify-between relative py-10 px-3 md:grid grid-cols-2'>

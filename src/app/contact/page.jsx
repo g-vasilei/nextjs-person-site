@@ -2,6 +2,11 @@ import React from 'react'
 import { BsEnvelope } from 'react-icons/bs'
 import ContactForm from '@/components/ContactForm'
 
+export const metadata = {
+   title: 'gvasilei | contact',
+   description: 'gvasilei contact page',
+}
+
 const contact = () => {
    return (
       <section className='px-3 mt-16'>
