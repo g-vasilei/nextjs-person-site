@@ -14,7 +14,7 @@ const DarkModeToggle = () => {
          <div className=''>🔆</div>
          <div
             className={`absolute w-[18px] h-[18px] md:w-[16px] md:h-[16px] bg-violet-700 rounded-full transition-all ease-in duration-500 ${
-               mode === 'dark' ? 'right-[4px]' : 'left-[4px]'
+               mode === 'dark' ? 'right-[3px]' : 'left-[3px]'
             }`}
          />
       </div>
