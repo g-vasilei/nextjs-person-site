@@ -16,8 +16,8 @@ const portfolio = () => {
             My Work <RiCodeSSlashFill size={40} />
          </h1>
          <p className='text-stone-400 mt-5'>Each project is unique. Here are some of my works.</p>
-         <div className='max-w-5xl mt-20 mx-auto px-12 py-10 border-[1px] border-[#20222E] bg-gradient-to-b from-[#23253180] to-[#0f0f1880] rounded-xl lg:grid lg:grid-cols-2'>
-            <Image className='' src='/img-dynamo.png' width={400} height={200} alt='dynamo img' />
+         <div className='max-w-5xl mt-20 mx-auto px-8 py-6 border-[1px] border-slate-100/50  rounded-xl lg:grid lg:grid-cols-2'>
+            <Image className='rounded-md' src='/img-dynamo.png' width={400} height={200} alt='dynamo img' />
             <div className='text-center mt-5 lg:self-center lg:mt-0'>
                <Link href='https://dynamo.gr' className='text-2xl text-slate-50'>
                   https://dynamo.gr
@@ -27,8 +27,8 @@ const portfolio = () => {
                </p>
             </div>
          </div>
-         <div className='max-w-5xl mt-20 mx-auto px-12 py-10 border-[1px] border-[#20222E] bg-gradient-to-b from-[#23253180] to-[#0f0f1880] rounded-xl lg:grid lg:grid-cols-2'>
-            <Image className='' src='/img-back.png' width={400} height={200} alt='backgammon img' />
+         <div className='max-w-5xl mt-20 mx-auto px-8 py-6 border-[1px] border-slate-100/50  rounded-xl lg:grid lg:grid-cols-2'>
+            <Image className='rounded-md' src='/img-back.png' width={400} height={200} alt='backgammon img' />
             <div className='text-center mt-5 lg:self-center lg:mt-0'>
                <Link
                   href='https://users.iee.ihu.gr/~it164767/ADISE20_BACKGAMMON_PLAKOTO/index.html'
@@ -41,8 +41,9 @@ const portfolio = () => {
                </p>
             </div>
          </div>
-         <div className='max-w-5xl mt-20 mx-auto px-12 py-10 border-[1px] border-[#20222E] bg-gradient-to-b from-[#23253180] to-[#0f0f1880] rounded-xl lg:grid lg:grid-cols-2'>
-            <Image className='' src='/img-elec.png' width={400} height={200} alt='electrician img' />
+         {/* bg-gradient-to-b from-[#23253180] to-[#0f0f1880] */}
+         <div className='max-w-5xl mt-20 mx-auto px-8 py-6 border-[1px] border-slate-100/50  rounded-xl lg:grid lg:grid-cols-2'>
+            <Image className='rounded-md' src='/img-elec.png' width={400} height={200} alt='electrician img' />
             <div className='text-center mt-5 lg:self-center lg:mt-0'>
                <Link href='https://g-vasilei.gr' className='text-2xl text-slate-50'>
                   https://electrician.gr/

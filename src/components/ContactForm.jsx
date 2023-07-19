@@ -1,13 +1,19 @@
 'use client'
 
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MdOutlineMailOutline, MdLocationPin } from 'react-icons/md'
 import ContactAnimation from './animations/ContactAnimation'
+import { usePathname } from 'next/navigation'
+import { ThemeContext } from '../context/ThemeContext'
 
 const ContactForm = () => {
    const form = useRef()
    const [emailStatus, setEmailStatus] = useState(null)
+
+   const pathname = usePathname()
+
+   const { mode } = useContext(ThemeContext)
 
    const sendEmail = (e) => {
       e.preventDefault()
@@ -40,15 +46,33 @@ const ContactForm = () => {
                <MdLocationPin size={20} /> location: Veroia
             </p>
          </div>
-         <form ref={form} onSubmit={sendEmail} className='lg:col-span-2'>
-            <input type='text' name='name' id='' placeholder='Name' className='w-full h-10 mb-5 px-2 rounded-sm' />
-            <input type='mail' name='email' id='' placeholder='email' className='w-full h-10 mb-5 px-2 rounded-sm' />
+         <form ref={form} onSubmit={sendEmail} className='lg:col-span-2 self-center'>
+            <input
+               type='text'
+               name='name'
+               id=''
+               placeholder='Name'
+               className={`w-full h-10 mb-5 px-2 rounded-md ${
+                  mode === 'dark' ? 'bg-transparent border-slate-100 border-[1px]' : 'border-[#d8d8d8] border-[1px]'
+               }`}
+            />
+            <input
+               type='mail'
+               name='email'
+               id=''
+               placeholder='email'
+               className={`w-full h-10 mb-5 px-2 rounded-md ${
+                  mode === 'dark' ? 'bg-transparent border-slate-100 border-[1px]' : 'border-[#d8d8d8] border-[1px]'
+               }`}
+            />
             <input
                type='text'
                name='message'
                id=''
                placeholder='Message'
-               className='w-full h-32  mb-5  px-2 rounded-sm'
+               className={`w-full h-32  mb-5  px-2 rounded-md ${
+                  mode === 'dark' ? 'bg-transparent border-slate-100 border-[1px]' : 'border-[#d8d8d8] border-[1px]'
+               }`}
             />
             <button type='submit' className='py-4 px-6 bg-violet-700 text-white rounded-lg'>
                Send
