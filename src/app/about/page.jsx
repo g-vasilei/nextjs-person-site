@@ -1,6 +1,8 @@
 import ReactAnimation from '@/components/animations/ReactAnimation'
 import WordpressAnimation from '@/components/animations/WordpressAnimation'
 import React from 'react'
+import { AiOutlineProject } from 'react-icons/ai'
+
 const reactSkills = [
    'HTML',
    'CSS',
@@ -37,7 +39,13 @@ export const metadata = {
 const about = () => {
    return (
       <div className='px-3 py-4 mt-10'>
-         <div className='md:grid md:grid-cols-2 md:gap-10 mb-20'>
+         <h1 className='text-4xl font-bold text-inherit flex items-center gap-4'>
+            About <AiOutlineProject size={40} />
+         </h1>
+         <p className='text-stone-400 mt-5'>
+            Here are some technologies we use. We create unique site according to your needs.
+         </p>
+         <div className='md:grid md:grid-cols-2 md:gap-10 mb-20 mt-20'>
             <div className=' max-w-full bg-violet-300 rounded-3xl md:max-h-72'>
                <div className='max-w-xs mx-auto'>
                   <ReactAnimation />
@@ -47,7 +55,7 @@ const about = () => {
                <h2 className='text-2xl font-bold mb-4'>Custome Site</h2>
                <div className='flex items-center flex-wrap gap-4'>
                   {reactSkills.map((skill, idx) => (
-                     <div key={idx} className='py-2 px-4 bg-violet-700 rounded-xl font-semibold'>
+                     <div key={idx} className='py-2 px-4 bg-violet-700 text-violet-100 rounded-xl font-semibold'>
                         {skill}
                      </div>
                   ))}
@@ -64,7 +72,7 @@ const about = () => {
                <h2 className='text-2xl font-bold mb-4'>Wordpress Site</h2>
                <div className='flex items-center flex-wrap gap-4'>
                   {wpSkills.map((skill, idx) => (
-                     <div key={idx} className='py-2 px-4 bg-violet-700 rounded-xl font-semibold'>
+                     <div key={idx} className='py-2 px-4 bg-violet-700 text-violet-100 rounded-xl font-semibold'>
                         {skill}
                      </div>
                   ))}

@@ -36,7 +36,7 @@ const ContactForm = () => {
       e.target.reset()
    }
    return (
-      <div className='mt-16 md:mt-20 lg:grid-cols-3 grid'>
+      <div className='pt-20 pb-6 md:mt-20 lg:grid-cols-3 grid'>
          <div className='grid-col self-center mb-10'>
             <ContactAnimation />
             <p className='flex items-center justify-center gap-3'>
