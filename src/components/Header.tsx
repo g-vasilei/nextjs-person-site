@@ -24,7 +24,7 @@ const Header = () => {
             <Link href='/'>gvasilei</Link>
          </h2>
          <nav
-            className={`absolute h-screen ${
+            className={`fixed h-screen ${
                mode === 'dark' ? 'bg-gradient-to-b from-[#111] to-[#113]' : 'bg-white'
             } text-inherit top-0 w-full z-[5] transition-all ease-in duration-500 md:h-fit md:w-fit md:relative md:to-[#111] md:top-auto md:left-auto ${
                menu ? 'left-0' : '-left-full'
