@@ -1,6 +1,8 @@
-import CircleAnimation from '@/components/animations/CircleAnimation'
-import HomeAnimation from '@/components/animations/HomeAnimation'
+// import CircleAnimation from '@/components/animations/CircleAnimation'
+// import HomeAnimation from '@/components/animations/HomeAnimation'
 import Link from 'next/link'
+import HomeAnimation from '../components/animations/HomeAnimation'
+import CircleAnimation from '../components/animations/CircleAnimation'
 
 export const metadata = {
    title: 'gvasilei',
@@ -29,10 +31,10 @@ export default function Home() {
             </div>
          </div>
          <div className='w-full mt-20 md:mt-0'>
-            <HomeAnimation className='' />
+            <HomeAnimation />
          </div>
          <div className='max-w-[180px] absolute hidden md:block md:-top-14 lg:top-7 lg:-left-24'>
-            <CircleAnimation size={30} />
+            <CircleAnimation />
          </div>
       </section>
    )

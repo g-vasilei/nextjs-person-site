@@ -2,7 +2,12 @@
 
 import { createContext, useState } from 'react'
 
-export const ThemeContext = createContext()
+interface CurrentUserContextType {
+   toggle: () => void
+   mode: string
+}
+
+export const ThemeContext = createContext<CurrentUserContextType | null>(null)
 
 export const ThemeProvider = ({ children }) => {
    const [mode, setMode] = useState('dark')

@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 import { ThemeContext } from '../context/ThemeContext'
 
 const ContactForm = () => {
-   const form = useRef()
+   const form = useRef<HTMLFormElement>()
    const [emailStatus, setEmailStatus] = useState(null)
 
    const pathname = usePathname()
@@ -17,7 +17,7 @@ const ContactForm = () => {
 
    const sendEmail = (e) => {
       e.preventDefault()
-      if (!form.current.name.value || !form.current.email.value || !form.current.message.value) {
+      if (!form.current.name.valueOf || !form.current.email.valueOf || !form.current.message.valueOf) {
          setEmailStatus('Fill')
          return
       } else {

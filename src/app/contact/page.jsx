@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsEnvelope } from 'react-icons/bs'
-import ContactForm from '@/components/ContactForm'
+import ContactForm from '../../components/ContactForm'
 
 export const metadata = {
    title: 'gvasilei | contact',

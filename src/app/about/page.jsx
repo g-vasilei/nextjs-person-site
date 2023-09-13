@@ -1,7 +1,7 @@
-import ReactAnimation from '@/components/animations/ReactAnimation'
-import WordpressAnimation from '@/components/animations/WordpressAnimation'
 import React from 'react'
 import { AiOutlineProject } from 'react-icons/ai'
+import ReactAnimation from '../../components/animations/ReactAnimation'
+import WordpressAnimation from '../../components/animations/WordpressAnimation'
 
 const reactSkills = [
    'HTML',
